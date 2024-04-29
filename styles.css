@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  /*  ### Primary */
+   --Very-Dark-Magenta: hsl(300, 43%, 22%);
+   --Soft-Pink: hsl(333, 80%, 67%);
+
+/*### Neutral*/
+
+   --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+   --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+   --White: hsl(0, 0%, 100%);
+   
+}
+
+body{
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+    margin: 100px auto;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+.textos{
+    width: 40%;
+}
+.titulo{
+    width: 80%;
+    font-size: 2.7em;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 20px;
+}
+.parrafo{
+    color: var(--Dark-Grayish-Magenta);
+    width: 80%;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+.estrellas{
+    width: 60%;
+}
+.container_star{
+    display: flex;
+    padding: 15px 50px;
+    background-color: var(--Light-Grayish-Magenta);
+    gap: 30px;
+    border-radius: 8px;
+    position: absolute;
+}
+.star-1{
+    top: 30px;
+    right: 150px;
+}
+.star-2{
+    right: 75px;
+    top: 93px;
+}
+.star-3{
+    bottom: 30px;
+    right: 10px;
+}
+.star_parrafo{
+    font-size: 14px;
+}
+.section2{
+    display: flex;
+    position: relative;
+}
+.card{
+    width: 30%;
+    min-width: 340px;
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--White);
+    position: absolute;
+}
+.card-2{
+    top: 20px;
+    left: 360px;
+}
+.card-3{
+    top: 40px;
+    right: 0;
+}
+.person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.foto{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.verified{
+    color: var(--Soft-Pink);
+}
+@media (max-width:700px){
+    .container{
+        width: 90%;
+        margin: 60px auto;
+        text-align: center;
+    }
+    .section1{
+        position: static;
+        flex-direction: column;
+    }
+    .textos{
+        width: 100%;
+    }
+    .estrellas{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+    }
+    .parrafo{
+        width: 100%;
+    }
+    .container_star{
+        position: static;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 20px;
+    }
+    .section2{
+        position: static;
+        flex-direction: column;
+    }
+    .card{
+        position: static;
+        margin-top: 20px;
+        text-align: start;
+    }
+}
